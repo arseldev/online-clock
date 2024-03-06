@@ -50,9 +50,12 @@ function getTimeRemaining(endtime) {
 
 function getTime() {
   var t = new Date();
+  var hours = t.getHours() % 12;
+  hours = hours ? hours : 12;
+
   return {
     Total: t,
-    Hours: t.getHours() % 12,
+    Hours: hours,
     Minutes: t.getMinutes(),
     Seconds: t.getSeconds(),
   };
@@ -108,4 +111,5 @@ function Clock(countdown, callback) {
 }
 
 var clock = new Clock();
+console.log(clock.el);
 document.body.appendChild(clock.el);
