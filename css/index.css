@@ -20,8 +20,13 @@ html {
     width: 100%;
 }
 
+.title div {
+    margin-bottom: 10px;
+}
+
 .title h1{
     font-size: 60px;
+    display: inline-block;
 }
 
 .title span {
@@ -102,5 +107,24 @@ html {
   .container {
     width: 100%;
   }
+
+  .card {
+    width: 45%;
+  }
+
+  .title h1{
+    font-size: 40px;
+    }
+
+    .title span {
+        font-size: 10px;
+    }
 }
+
+@media (max-width: 768px) {
+    .card {
+      width: 100%;
+      height: auto;
+    }
+  }
 
