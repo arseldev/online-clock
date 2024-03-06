@@ -50,12 +50,10 @@ function getTimeRemaining(endtime) {
 
 function getTime() {
   var t = new Date();
-  var hours = t.getHours() % 12;
-  hours = hours ? hours : 12;
 
   return {
     Total: t,
-    Hours: hours,
+    Hours: t.getHours(),
     Minutes: t.getMinutes(),
     Seconds: t.getSeconds(),
   };
