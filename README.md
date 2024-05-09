@@ -87,7 +87,7 @@ _Ikuti petunjuk dibawah untuk penggunaan program._
 
 1. Clone repository
    ```sh
-   git clone https://github.com/accenggg/online-clock
+   git clone https://github.com/arseldev/online-clock
    ```
 2. Jalankan program
    ```sh
